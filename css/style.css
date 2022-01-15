@@ -1,0 +1,46 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* NavigationBar */
+#navbar{
+    display: flex;  /*gets things in a row*/
+    align-items: center; /* center aligns all items */
+}
+
+/* NavigationBar Logo and image */
+#logo{
+    margin: 14px 15px;
+}
+
+#logo img{
+    height: 66px;
+    margin: 2px 5px;
+}
+
+
+/* NavigationBar List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
