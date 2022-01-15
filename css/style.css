@@ -29,10 +29,6 @@
 
 /* NavigationBar List Styling */
 
-#navbar{
-    /* Keep the navbar relative to items in it */
-    position: relative;
-}
 
 
 #navbar::before{
@@ -74,6 +70,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
+    height: 610px;
     justify-content: center;
     align-items: center;
 }
@@ -89,3 +86,62 @@
     z-index: -1;  /*content gets on the white portion*/
     opacity: 0.9;
 }
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(207, 207, 206);
+}
+
+#services .box img{
+    height: 159px;
+    margin: auto;
+    display: block;
+
+}
+#services{}
+
+/* Utility classes */
+.h-primary{
+    color: black;
+    font-size: 4.9rem;
+    padding: 12px;
+    font-family: 'Playball', cursive;
+}
+
+.h-primary1{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+
+
+.btn{
+    padding: 6px 22px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
