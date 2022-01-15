@@ -28,19 +28,64 @@
 
 
 /* NavigationBar List Styling */
+
+#navbar{
+    /* Keep the navbar relative to items in it */
+    position: relative;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;  /*content gets on the white portion*/
+    opacity: 0.4;
+}
+
 #navbar ul{
     display: flex;
 }
 
+
 #navbar ul li{
-    /* color: white; */
     list-style: none;
     font-size: 1.3rem;
 }
 
 #navbar ul li a{
+    color: white;
     display: block;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
+}
+
+/* Whenever somebody hovers on it make the color black and background white */
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Home section */
+#home::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;  /*content gets on the white portion*/
+    opacity: 0.9;
 }
